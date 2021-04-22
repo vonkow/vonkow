@@ -9,6 +9,7 @@ export default function Home() {
     </Head>
     <main className={styles.main}>
       <h1>vonkow</h1>
+      <p>My name is Caz. I am fascinated by sociotechnical systems. I am not sure why.</p>
     </main>
   </>
 }
