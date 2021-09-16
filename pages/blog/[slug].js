@@ -33,7 +33,7 @@ export default function mdxPage({ source, data, posts }) {
       <h1>{data.title}</h1>
       <article>{content}</article>
       <p>
-        <em>{data.published.toDateString()}</em>
+        Updated: <em>{data.published.toDateString()}</em>
       </p>
       <p>
         <Link href="/blog">
