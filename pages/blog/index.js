@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/Link'
 import styles from '../../styles/Home.module.css'
 import fs from 'fs';
 import path from 'path';
@@ -21,12 +22,16 @@ export default function Home({ posts }) {
       <ul>
       {posts.map(post => (
         <li>
-          <a href={post.href}>{post.title}</a>
+          <Link href={post.href}>
+            <a>{post.title}</a>
+          </Link>
         </li>
       ))}
       </ul>
       <p>
-        <a href="/">Back to home</a>
+        <Link href="/">
+          <a>Back to home</a>
+        </Link>
       </p>
     </main>
   </>

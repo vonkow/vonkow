@@ -16,7 +16,7 @@ const postsFilePaths = fs
   .filter(path => /\.mdx?$/.test(path));
 
 const components = {
-  //a: CustomLink,
+  a: Link,
   Head,
 };
 
@@ -36,7 +36,9 @@ export default function mdxPage({ source, data, posts }) {
         <em>{data.published.toDateString()}</em>
       </p>
       <p>
-        <a href="/blog">Back to blog list</a>
+        <Link href="/blog">
+          <a>Back to blog list</a>
+        </Link>
       </p>
     </main>
   );
