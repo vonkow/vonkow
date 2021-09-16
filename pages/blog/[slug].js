@@ -37,7 +37,7 @@ export default function mdxPage({ source, data, posts }) {
       </p>
       <p>
         <Link href="/blog">
-          <a>Back to blog list</a>
+          <a>Back</a>
         </Link>
       </p>
     </main>

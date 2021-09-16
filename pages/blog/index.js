@@ -14,11 +14,11 @@ const postsFilePaths = fs
 export default function Home({ posts }) {
   return <>
     <Head>
-      <title>Blahg</title>
+      <title>Thoughts, Whisps, and Memories</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main className={styles.main}>
-      <h1>Blahg</h1>
+      <h1>Thoughts, Whisps, and Memories</h1>
       <ul>
       {posts.map(post => (
         <li>
